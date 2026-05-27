@@ -2,3 +2,4 @@
 node_modules/
 tpm/*
 public/images/covers/*
+/prisma/prisma
