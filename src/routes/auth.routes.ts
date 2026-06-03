@@ -3,6 +3,6 @@ import * as authController from '../controllers/auth.controller'
 
 export const authRoutes = Router()
 
-authRoutes.post('/singin', authController.signIn)
-authRoutes.post('/singup', authController.signUp)
+authRoutes.post('/signin', authController.signIn)
+authRoutes.post('/signup', authController.signUp)
 authRoutes.post('/signup', authController.validate)
