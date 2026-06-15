@@ -4,10 +4,9 @@ import { createUser, verifyUser } from '../services/user.service'
 import { createToken } from "../services/auth.service"
 
 export const signIn: RequestHandler = async (req, res) => {
-     const schema = z.object({
-    name: z.string(),
-    email: z.string().email(),
-    password: z.string()
+    const schema = z.object({
+        email: z.string().email(),
+        password: z.string()
    })
    const data = schema.safeParse(req.body)
    if (!data.success) {
